@@ -6,7 +6,7 @@ RUN pacman -Syyu --noconfirm && \
     pacman -Scc --noconfirm && \
     ln -sf /usr/share/zoneinfo/Europe/Paris /etc/localtime
 ENV PATH="/venv/bin:$PATH"
-ENV TZ=Europe/Paris
+ENV TZ=Asia/Jakarta
 RUN pip3 install -U pip setuptools wheel && \
     mkdir /app
 WORKDIR /app
